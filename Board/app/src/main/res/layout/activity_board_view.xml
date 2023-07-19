@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardViewActivity">
+
+    <TextView
+        android:id="@+id/tv_writer"
+        android:layout_width="354dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="#03A9F4"
+        android:gravity="center_vertical"
+        android:text="작성자"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="354dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="#03A9F4"
+        android:gravity="center_vertical"
+        android:text="제목"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_writer"
+        app:layout_constraintStart_toStartOf="@+id/tv_writer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_writer" />
+
+    <TextView
+        android:id="@+id/tv_regdate"
+        android:layout_width="354dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="#03A9F4"
+        android:gravity="center_vertical"
+        android:text="작성일자"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_hitno"
+        android:layout_width="354dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="#03A9F4"
+        android:gravity="center_vertical"
+        android:text="조회수"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_regdate"
+        app:layout_constraintStart_toStartOf="@+id/tv_regdate"
+        app:layout_constraintTop_toBottomOf="@+id/tv_regdate" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="350dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFEB3B"
+        android:text="내용"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hitno"
+        app:layout_constraintStart_toStartOf="@+id/tv_hitno"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hitno" />
+
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="342dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="게시물 목록 가기"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>
